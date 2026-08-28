@@ -93,7 +93,7 @@ Não colocar lógica de domínio diretamente em componentes React, handlers HTTP
 
 ## Arquitetura de pastas conceitual
 
-Estrutura recomendada — **não criar estes diretórios nesta tarefa**, é uma recomendação para a etapa de implementação:
+Estrutura recomendada, já criada no bootstrap do projeto (`src/`, `supabase/`) — cada módulo/pasta abaixo existe hoje só como esqueleto vazio (`.gitkeep`), sem lógica de negócio; código real entra feature a feature. `src/app/` (Next.js App Router) e `src/components/ui/` + `src/lib/` (shadcn/ui) também existem, adicionados pelo bootstrap e não listados originalmente aqui:
 
 ```
 src/

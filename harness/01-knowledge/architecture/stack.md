@@ -1,6 +1,8 @@
 # Stack
 
-> Stack técnica recomendada para o estágio atual (Modular Monolith — ver [ADR-004](../decisions/adr/004-modular-monolith.md)). Nada aqui foi instalado; é a stack que orienta a próxima etapa de implementação. Fonte única de verdade sobre stack — não redefinir em `../constitution.md`, apenas linkar para cá.
+> Stack técnica recomendada para o estágio atual (Modular Monolith — ver [ADR-004](../decisions/adr/004-modular-monolith.md)). Fonte única de verdade sobre stack — não redefinir em `../constitution.md`, apenas linkar para cá.
+>
+> **Status:** Next.js, TypeScript, React, Tailwind CSS, shadcn/ui, Zod e o SDK do Supabase (`@supabase/supabase-js`) já foram instalados no bootstrap do projeto (`package.json` na raiz) — ainda sem lógica de negócio, sem projeto Supabase configurado e sem nenhuma das seções "Observability e Testing" abaixo, que seguem apenas candidatas.
 
 ## Language
 
