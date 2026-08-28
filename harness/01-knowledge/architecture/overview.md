@@ -2,7 +2,21 @@
 
 ## Visão de alto nível
 
-Este documento trata de **modelagem de domínio conceitual** (bounded contexts), não de arquitetura física — não assumir que cada domínio abaixo vira um microsserviço. Ver [`../product/vision.md`](../product/vision.md) para a visão de produto que motiva esses domínios e [`context-map.md`](context-map.md) para como eles se relacionam.
+A Oxente Creator é construída inicialmente como um **Modular Monolith** — ver [ADR-004](../decisions/adr/004-modular-monolith.md): uma única codebase, um único deploy principal, um único PostgreSQL (via Supabase), com módulos de negócio de fronteiras explícitas. A arquitetura física permanece simples; a arquitetura lógica possui boas fronteiras. Isso otimiza para velocidade de desenvolvimento e de aprendizado, não para escala hipotética — ver [Architecture Fitness Principles em `evolution.md`](evolution.md#architecture-fitness-principles).
+
+Documentos de arquitetura:
+
+| Documento | Cobre |
+| --- | --- |
+| [`stack.md`](stack.md) | Stack técnica (linguagem, framework, dados, hosting, AI) |
+| [`domain-architecture.md`](domain-architecture.md) | Bounded contexts como módulos, layering, Match vs Opportunity, matching pipeline, pastas conceituais |
+| [`data-architecture.md`](data-architecture.md) | PostgreSQL como system of record, Evidence-first Intelligence, multi-tenancy |
+| [`ai-architecture.md`](ai-architecture.md) | AI Provider Abstraction, agent architecture, evaluation |
+| [`deployment.md`](deployment.md) | Vercel + Supabase, processamento assíncrono, alternativas de hosting |
+| [`evolution.md`](evolution.md) | Fitness principles, non-goals, evolution path, decisões em aberto |
+| [`context-map.md`](context-map.md) | Relação entre os 4 Graphs de produto (Creator/Brand/Opportunity/Deal) |
+
+Este documento (`overview.md`) trata de **modelagem de domínio conceitual** (bounded contexts), não de arquitetura física — não assumir que cada domínio abaixo vira um microsserviço. Ver [`../product/vision.md`](../product/vision.md) para a visão de produto que motiva esses domínios.
 
 ## Domínios
 

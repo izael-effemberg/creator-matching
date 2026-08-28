@@ -2,6 +2,8 @@
 
 > **Não confundir com `harness/03-execution/agents/`.** Este documento descreve a arquitetura de agentes de IA que compõem o *produto* Oxente Creator (ex.: Matchmaking Agent). `harness/03-execution/` descreve os agentes de engenharia que operam *sobre este repositório* (coding agents). São conceitos diferentes que compartilham o nome "agent".
 >
+> Princípio de engenharia relacionado: nenhum destes agentes deve ser implementado acoplando um framework de agentes (LangChain, LangGraph, CrewAI etc.) como fundação arquitetural — ver [`../architecture/ai-architecture.md`](../architecture/ai-architecture.md#agent-architecture) e [ADR-008](../decisions/adr/008-ai-provider-abstraction.md).
+>
 > Este documento separa **product capability** (o que o produto faz, definido em [`vision.md`](vision.md) e [`intelligence/`](intelligence/)) de **agent implementation** (como uma capability é implementada como agente). Uma capability como Brand Discovery pode, no futuro, deixar de ser implementada como este agente específico sem que a capability em si mude.
 
 ## Mapeamento capability → agente
