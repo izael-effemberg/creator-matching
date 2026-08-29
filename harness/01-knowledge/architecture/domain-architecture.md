@@ -118,3 +118,5 @@ supabase/
 ```
 
 Cada módulo em `modules/` deve internamente refletir a separação Interface/Application/Domain/Infrastructure descrita acima. `platform/` concentra integrações técnicas (AI provider adapters, cliente Supabase, jobs, observabilidade) que os módulos de domínio consomem sem conhecer detalhes de implementação.
+
+**Primeiro módulo real:** `src/modules/creators/` segue exatamente essa estrutura (Phase 1 de P0 do Creator Intelligence Database — ver [`../../02-intent/specs/creator/creator-intelligence-database.md`](../../02-intent/specs/creator/creator-intelligence-database.md) e [ADR-011](../decisions/adr/011-creator-ownership-model.md)) — referência concreta para os próximos módulos.

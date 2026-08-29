@@ -1,6 +1,8 @@
 # Creator Domain
 
 > Modelagem de domínio (conceitual), não schema de banco de dados nem arquitetura física. Ver [`../architecture/context-map.md`](../architecture/context-map.md) para como este domínio se relaciona com os demais.
+>
+> **Implementação real:** o schema completo, migrations e código estão especificados em [`../../02-intent/specs/creator/creator-intelligence-database.md`](../../02-intent/specs/creator/creator-intelligence-database.md) (Phase 1 de P0 implementada em `src/modules/creators/` + `supabase/migrations/`). Ver [ADR-011](../decisions/adr/011-creator-ownership-model.md) para o modelo de ownership (global-first) adotado.
 
 ## O que representa
 
